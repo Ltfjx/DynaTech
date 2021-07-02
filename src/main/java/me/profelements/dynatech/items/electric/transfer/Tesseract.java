@@ -209,8 +209,8 @@ public class Tesseract extends SlimefunItem implements EnergyNetProvider {
 
         lore.clear();
         lore.add(" ");
-        lore.add(ChatColor.WHITE +"目前電力: " + currentCharge);
-        lore.add(ChatColor.WHITE +"目前狀態: " + ChatColor.RED + "連接");
+        lore.add(ChatColor.WHITE +"目前电力: " + currentCharge);
+        lore.add(ChatColor.WHITE +"目前状态: " + ChatColor.RED + "连接");
         knowledgePane.setType(Material.RED_STAINED_GLASS_PANE);
 
         im.setLore(lore);
@@ -222,7 +222,7 @@ public class Tesseract extends SlimefunItem implements EnergyNetProvider {
         preset.drawBackground(ChestMenuUtils.getBackground(), getBorder());
         preset.drawBackground(ChestMenuUtils.getInputSlotTexture(), getInputBorder());
         preset.drawBackground(ChestMenuUtils.getOutputSlotTexture(), getOutputBorder());
-        preset.addItem(4, new CustomItem(Material.PURPLE_STAINED_GLASS_PANE, "&f知識面板", "&f目前電量: 未知", "&f目前狀態: 未連接"), ChestMenuUtils.getEmptyClickHandler());
+        preset.addItem(4, new CustomItem(Material.PURPLE_STAINED_GLASS_PANE, "&f知识面板", "&f目前电量: 未知", "&f目前状态: 未连接"), ChestMenuUtils.getEmptyClickHandler());
     }
 
     
