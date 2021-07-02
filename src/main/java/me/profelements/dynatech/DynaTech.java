@@ -70,7 +70,7 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
         }
 
         if (System.getProperty("java.version").startsWith("1.8")) {
-            getLogger().log(Level.WARNING, "           Dyna科技将会切换至JAVA 11        ");
+            getLogger().log(Level.WARNING, "           动力科技将会切换至JAVA 11        ");
             getLogger().log(Level.WARNING, "                请更新到JAVA 11                ");
         }
     }
