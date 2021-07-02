@@ -60,7 +60,7 @@ public class WirelessItemOutput extends SlimefunItem implements EnergyNetCompone
 
         addItemHandler(onBlockBreak(), onBlockPlace(), onRightClick());
         
-        new BlockMenuPreset("WIRELESS_ITEM_OUTPUT", "無線物品輸出") {
+        new BlockMenuPreset("WIRELESS_ITEM_OUTPUT", "无线物品输出") {
 
             @Override
             public void init() {
@@ -226,8 +226,8 @@ public class WirelessItemOutput extends SlimefunItem implements EnergyNetCompone
 
         lore.clear();
         lore.add(" ");
-        lore.add(ChatColor.WHITE +"目前電量: " + currentCharge);
-        lore.add(ChatColor.WHITE +"目前狀態: " + ChatColor.RED + "連接");
+        lore.add(ChatColor.WHITE +"目前电量: " + currentCharge);
+        lore.add(ChatColor.WHITE +"目前状态: " + ChatColor.RED + "连接");
         knowledgePane.setType(Material.RED_STAINED_GLASS_PANE);
 
         im.setLore(lore);
@@ -237,7 +237,7 @@ public class WirelessItemOutput extends SlimefunItem implements EnergyNetCompone
     //Boilerplate for machines.
     public void constructMenu(BlockMenuPreset preset) {
         preset.drawBackground(ChestMenuUtils.getOutputSlotTexture(), getBorder());
-        preset.addItem(4, new CustomItem(Material.PURPLE_STAINED_GLASS_PANE, "&f知識面板", "&f目前電量: 未知", "&f目前狀態: 未連接"), ChestMenuUtils.getEmptyClickHandler());
+        preset.addItem(4, new CustomItem(Material.PURPLE_STAINED_GLASS_PANE, "&f知识面板", "&f目前电量: 未知", "&f目前状态: 未连接"), ChestMenuUtils.getEmptyClickHandler());
     }
 
     
