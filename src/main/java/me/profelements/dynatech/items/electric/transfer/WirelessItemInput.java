@@ -45,7 +45,7 @@ public class WirelessItemInput extends SlimefunItem implements EnergyNetComponen
 
         addItemHandler(onBlockBreak());
         
-        new BlockMenuPreset("WIRELESS_ITEM_INPUT", "無線物品輸入") {
+        new BlockMenuPreset("WIRELESS_ITEM_INPUT", "无线物品输入") {
 
             @Override
             public void init() {
@@ -125,8 +125,8 @@ public class WirelessItemInput extends SlimefunItem implements EnergyNetComponen
 
         lore.clear();
         lore.add(" ");
-        lore.add(ChatColor.WHITE +"目前電量: " + currentCharge);
-        lore.add(ChatColor.WHITE +"目前狀態: 有趣的.");
+        lore.add(ChatColor.WHITE +"目前电量: " + currentCharge);
+        lore.add(ChatColor.WHITE +"目前状态: 有趣的.");
 
         im.setLore(lore);
         knowledgePane.setItemMeta(im);
@@ -135,7 +135,7 @@ public class WirelessItemInput extends SlimefunItem implements EnergyNetComponen
     //Boilerplate for machines.
     public void constructMenu(BlockMenuPreset preset) {
         preset.drawBackground(ChestMenuUtils.getInputSlotTexture(), getBorder());
-        preset.addItem(4, new CustomItem(Material.PURPLE_STAINED_GLASS_PANE, "&f知識面板"), ChestMenuUtils.getEmptyClickHandler());
+        preset.addItem(4, new CustomItem(Material.PURPLE_STAINED_GLASS_PANE, "&f知识面板"), ChestMenuUtils.getEmptyClickHandler());
     }
 
     
