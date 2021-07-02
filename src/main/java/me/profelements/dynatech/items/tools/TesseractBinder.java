@@ -42,7 +42,7 @@ public class TesseractBinder extends SlimefunItem {
                     String locString = PersistentDataAPI.getString(item.getItemMeta(), Tesseract.WIRELESS_LOCATION_KEY);
                     if (item != null && BlockStorage.checkID(blockLocation).equals(DynaTechItems.TESSERACT.getItemId()) && item.hasItemMeta() && locString != null) {
                         BlockStorage.addBlockInfo(blockLocation, "tesseract-pair-location", locString);
-                        e.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(ChatColor.WHITE + "光學傳輸器已連接!"));
+                        e.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(ChatColor.WHITE + "光学传输器已连接!"));
                     }
                 } else if (sfBlock != null && sfItem.getId().equals(DynaTechItems.TESSERACT.getItemId()) && blockLocation != null) {
                     ItemMeta im = item.getItemMeta();
