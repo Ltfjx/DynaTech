@@ -86,10 +86,10 @@ public class WeatherController extends AMachine implements RecipeDisplayItem {
     public List<ItemStack> getDisplayRecipes() {
         List<ItemStack> items = new ArrayList<>();
         items.add(new ItemStack(Material.SUNFLOWER));
-        items.add(new CustomItem(Material.DIAMOND, "&f使費城充滿陽光."));
+        items.add(new CustomItem(Material.DIAMOND, "&f使费城充满阳光."));
 
         items.add(new ItemStack(Material.LILAC));
-        items.add(new CustomItem(Material.DIAMOND, "&f當老人在打鼾時下雨"));
+        items.add(new CustomItem(Material.DIAMOND, "&f当老人在打鼾时下雨"));
 
         items.add(new ItemStack(Material.CREEPER_HEAD));
         items.add(new CustomItem(Material.DIAMOND, "&f使其雷雨."));
